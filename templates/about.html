@@ -3,9 +3,50 @@
     <head>
         <meta charset="UTF-8">
         <title>My Website - About</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}"/>
     </head>
     <body>
-        <h1>Peter Thelwell</h1>
-        <p>Hey everyone. I am currently a final year student that is interested in web development and app development. My other interests include video gaming and working out. I hope to learn alot during this course.</p>
+        <header class="header">
+            <h1>Peter Thelwell</h1>
+        </header>
+        <main>
+            <img src="{{ url_for ('static', filename='Picture of Me.jpeg') }}"/>
+            <div class="about-summary">
+                <p>Hey everyone! I am currently a final year student that is interested in web development and app development. My other interests include video gaming and working out. I hope to learn alot during this course.</p>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="card-body">
+                        <h3>Schools attended:</h3>
+                        <ul>
+                            <li>Mona Preparatory School</li>
+                            <li>Wolmers Boys School</li>
+                            <li>Campion College</li>
+                            <li>University of the West Indies</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h3>Growing up:</h3>
+                        <p>I grew up in Cherry Gardens, located on the beautiful island of Jamaica. I grew up with my mother, my brother, and my grandparents. I would say that I had a happy childhood, and my experiences as a child helped me to become the person I am today.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h3>After Graduation:</h3>
+                        <p>I would like to be a wealthy, successful personal trainer and freelance developer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="websites">
+                <h3>Some of my favourite websites include:</h3>
+                <ul>
+                <li><a href="https://www.nerdfitness.com/"><b>Nerd Fitness</b></a>: A motivational blog that aims to explain fitness concepts in a way that appeals to people with nerdier interests.</li>
+                <li><a href="https://www.thebioneer.com/"><b>The Bioneer</b></a>: A website that focuses on the ways in which people can use their bodies to improve themselves in many ways, including fitness and learning techniques.</li>
+                <li><a href="https://www.youtube.com/"><b>Youtube</b></a>: The world's largest video sharing platform. Contains videos covering a near infinite range of topics.</li>
+                </ul>
+            </div>
+        </main>
     </body>
 </html>
